@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from './pages/Home';
 import BoxPage from "./pages/BoxPage";
 import Notfound from "./pages/NotFound";
+import Button from "./components/Button";
 
 function Router() {
   return (
@@ -10,6 +11,7 @@ function Router() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/box" component={BoxPage} />
+        <Route exact path="/button" component={Button} />
         <Route component={Notfound} />
       </Switch>
     </BrowserRouter>
