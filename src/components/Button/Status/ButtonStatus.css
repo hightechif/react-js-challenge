@@ -1,0 +1,75 @@
+.btn-success {
+    width: 121px;
+    height: 40px;
+    mix-blend-mode: normal;
+    border: none;
+
+    /* fill/hard */
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    /* secondary/g100 */
+    background: #47C2B1;
+}
+
+.btn-success-text {
+    /* Success */
+    position: absolute;
+    width: 73px;
+    height: 35px;
+    left: 24px;
+    top: calc(50% - 35px/2 + 0.5px);
+
+    /* body/large */
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+
+    /* primary/white */
+    color: #FFFFFF;
+}
+
+.btn-delete {
+    width: 109px;
+    height: 40px;
+    mix-blend-mode: normal;
+    border: none;
+
+    /* fill/hard */
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    /* secondary/r100 */
+    background: #FF8576;
+}
+
+.btn-delete-text {
+    /* Delete */
+    position: absolute;
+    width: 61px;
+    height: 35px;
+    left: 24px;
+    top: calc(50% - 35px/2 + 0.5px);
+
+    /* body/large */
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+
+    /* primary/white */
+    color: #FFFFFF;
+}
