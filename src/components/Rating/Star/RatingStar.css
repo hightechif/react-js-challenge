@@ -1,0 +1,29 @@
+.rating {
+    float:left;
+}
+.rating span { 
+    float:right; 
+    position:relative; 
+}
+.rating span input {
+    position:absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    opacity:0;
+}
+.rating span label {
+    display:inline-block;
+    width: 40px;
+    height: 40px;
+    text-align:center;
+    color: #47C2B1;
+    opacity: 0.4;
+}
+.rating span:hover ~ span label,
+.rating span:hover label,
+.rating span.checked label,
+.rating span.checked ~ span label {
+    opacity: 1;
+}

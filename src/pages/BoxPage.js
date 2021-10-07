@@ -1,10 +1,10 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import '../styles/BoxInstructor.module.css'; // template from tutorial
 import styles from '../styles/BoxStyle.module.css'; // lesson
 
 function BoxPage() {
     return (
-        <Fragment>
+        <div id="box-page">
             <ul>
               <li>Margin</li>
               <li>The Box / Border</li>
@@ -23,7 +23,7 @@ function BoxPage() {
                   </div>
               </div> */}
           </section>
-        </Fragment>
+        </div>
     )
 }
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import style from '../styles/Button.module.css';
+import style from '../../styles/Button.module.css';
 
 // var notif = document.getElementsByClassName("circle");
 // 
@@ -11,13 +11,13 @@ import style from '../styles/Button.module.css';
 //   }
 // }
 
-function Button() {
+function ButtonNotif() {
     return (
-        <button className={style}>
+        <button>
             Pesan
             <div className={style.circle}></div>
         </button>
     )
 }
 
-export default Button;
+export default ButtonNotif;
