@@ -1,24 +1,11 @@
 import React from 'react'
-import '../App.css';
-import logo from '../logo.svg';
+import Button from '../components/Button/Button';
 
-function Home() {
+const Home = ({text, className, textStyle}) => {
     return (
-        <div className="App">
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <p>
-                Edit <code>src/App.js</code> and save to reload.
-                </p>
-                <a
-                className="App-link"
-                href="https://reactjs.org"
-                target="_blank"
-                rel="noopener noreferrer"
-                >
-                Learn React
-                </a>
-            </header>
+        <div className="button-container">
+            <Button text="Button Primary" className="btn-primary" textStyle="btn-primary-text"/>
+            <Button text="Button Secondary" className="btn-secondary" textStyle="btn-secondary-text"/>
         </div>
     )
 }
