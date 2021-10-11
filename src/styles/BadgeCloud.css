@@ -1,0 +1,50 @@
+.badge-cloud-container {
+    max-width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.badge-cloud {
+    width: fit-content;
+    height: 28px;
+    margin: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    /* stroke/round */
+    position: relative;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    /* primary/b200 */
+    box-sizing: border-box;
+    border-radius: 100px;
+
+    /* body/default */
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 27px;
+
+    /* identical to box height */
+    align-items: center;
+    text-align: center;
+}
+.bd-primary {
+    /* primary/b200 */
+    background: #0084F8;
+    color: #FFFFFF;
+
+    /* primary/b200 */
+    border: 1px solid #0084F8;
+}
+.bd-secondary {
+    /* primary/b200 */
+    background: #FFFFFF;
+    color: #0084F8;
+
+    /* primary/b200 */
+    border: 1px solid #0084F8;
+}

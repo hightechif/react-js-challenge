@@ -1,24 +1,35 @@
 import React from 'react'
-import '../App.css';
-import logo from '../logo.svg';
+import Button from '../components/Button/Button';
+import ButtonNotif from '../components/Button/ButtonNotif';
+import RatingRound from '../components/Rating/RatingRound';
+import RatingStar from '../components/Rating/RatingStar';
+import Badge from '../components/Badge/Badge';
+import Modal from '../components/Modal/Modal';
+import BadgeColor from '../components/Badge/BadgeColor';
+import BadgeCloud from '../components/Badge/BadgeCloud';
 
-function Home() {
+const Home = ({text, className, decorator}) => {
     return (
-        <div className="App">
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <p>
-                Edit <code>src/App.js</code> and save to reload.
-                </p>
-                <a
-                className="App-link"
-                href="https://reactjs.org"
-                target="_blank"
-                rel="noopener noreferrer"
-                >
-                Learn React
-                </a>
-            </header>
+        <div className="home">
+            <ButtonNotif text="Pesan" className="btn-notif" decorator="circle"/>
+            <div className="button-container">
+                <Button text="Button Primary" className="btn-primary"/>
+                <Button text="Button Secondary" className="btn-secondary"/>
+                <Button text="Button Disabled" className="btn-disabled"/>
+                <Button text="Button Success" className="btn-success"/>
+                <Button text="Button Delete" className="btn-delete"/>
+            </div>
+            <div className="rating-container">
+                <RatingRound />
+                <RatingStar />
+            </div>
+            <div className="badge-container">
+                <Badge text="Badge" className="badge" />
+                <Badge text="Badge" className="badge-second" />
+                <BadgeColor />
+                <BadgeCloud />
+            </div>
+            <Modal />
         </div>
     )
 }

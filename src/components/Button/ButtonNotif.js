@@ -1,21 +1,10 @@
 import React from 'react';
-import style from '../../styles/Button.module.css';
 
-// var notif = document.getElementsByClassName("circle");
-// 
-// const refreshButton = () => {
-//   if (notif[0].style.visibility !== "hidden") {
-//   	notif[0].style.visibility = "hidden";
-//   } else {
-//   	notif[0].style.visibility = "visible";
-//   }
-// }
-
-function ButtonNotif() {
+const ButtonNotif = (props) => {
     return (
-        <button>
+        <button className={props.className}>
             Pesan
-            <div className={style.circle}></div>
+            <div className={props.decorator}></div>
         </button>
     )
 }
