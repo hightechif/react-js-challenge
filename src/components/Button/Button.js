@@ -3,11 +3,9 @@ import React from 'react';
 const Button = (props) => {
     return (
         <button className={props.className}>
-            <div className={props.textStyle}>
-                {props.text}
-            </div>
+            {props.text}
         </button>
     )
 }
 
-export default Button
+export default Button;

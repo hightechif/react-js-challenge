@@ -1,7 +1,6 @@
-import React from 'react'
-import 'RatingRound.css';
+import React from 'react';
 
-function RatingRound() {
+const RatingRound = () => {
     return (
         <div className="rating">
             <span><input type="radio" name="rating" id="str1" value="1"/><label htmlFor="str1"></label></span>
@@ -13,4 +12,4 @@ function RatingRound() {
     )
 }
 
-export default RatingRound
+export default RatingRound;

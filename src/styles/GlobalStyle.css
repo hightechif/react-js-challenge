@@ -1,75 +1,18 @@
+.home {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
 .button-container {
     display: flex;
+    margin: 5px;
 }
-
-.btn-primary {
-    border: none;
-    background: #0084F8;
-}
-
-.btn-primary-text {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 34px;
+.rating-container {
     display: flex;
-    align-items: center;
-    color: #FFFFFF;
+    justify-content: flex-start;
+    margin: 5px;
 }
-
-.btn-secondary {
-    background-color: #FFFFFF;
-    border: 1px solid #0084F8;
-    box-sizing: border-box;
-}
-
-.btn-secondary-text {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 34px;
+.badge-container {
     display: flex;
-    align-items: center;
-    color: #0084F8;
-}
-
-.btn-disabled {
-    width: 130px;
-    height: 40px;
-    mix-blend-mode: normal;
-    border: none;
-
-    /* fill/hard */
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-
-    /* secondary/d200 */
-    background: #C9D6DF;
-}
-
-.btn-disabled-text {
-    mix-blend-mode: normal;
-    /* Disabled */
-    position: absolute;
-    width: 82px;
-    height: 35px;
-    left: 24px;
-    top: calc(50% - 35px/2 + 0.5px);
-
-    /* body/large */
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 34px;
-    display: flex;
-    align-items: center;
-
-    /* primary/white */
-    color: #FFFFFF;
+    margin: 5px; /*Conditional*/
 }
