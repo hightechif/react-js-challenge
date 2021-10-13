@@ -12,10 +12,11 @@
 
 .cards__item {
     margin: 0 15px;
+    width: 270px;
 }
 
 .cards__item__pic-wrap {
-    width: 270px;
+    width: inherit;
     height: 270px;
 }    
 
