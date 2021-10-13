@@ -10,6 +10,7 @@ import './styles/components/BadgeCloud.css';
 import './styles/components/Modal.css';
 import './styles/components/Cards.css';
 import './styles/components/Boxes.css';
+import './styles/components/Content.css';
 import './styles/components/section/Section1.css';
 import './styles/components/section/Section2.css';
 import './styles/components/section/Section3.css';
