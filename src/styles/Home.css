@@ -1,0 +1,11 @@
+.home {
+    background: #F2F3F5;
+    padding-top: 15vh;
+    height: 85vh;
+    color: burlywood;
+    text-align: center;
+}
+
+.home > .hyperlink {
+    color: burlywood;
+}
