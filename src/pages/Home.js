@@ -1,35 +1,20 @@
-import React from 'react'
-import Button from '../components/Button/Button';
-import ButtonNotif from '../components/Button/ButtonNotif';
-import RatingRound from '../components/Rating/RatingRound';
-import RatingStar from '../components/Rating/RatingStar';
-import Badge from '../components/Badge/Badge';
-import Modal from '../components/Modal/Modal';
-import BadgeColor from '../components/Badge/BadgeColor';
-import BadgeCloud from '../components/Badge/BadgeCloud';
+import React from 'react';
+import {Link} from 'react-router-dom';
 
 const Home = ({text, className, decorator}) => {
     return (
         <div className="home">
-            <ButtonNotif text="Pesan" className="btn-notif" decorator="circle"/>
-            <div className="button-container">
-                <Button text="Button Primary" className="btn-primary"/>
-                <Button text="Button Secondary" className="btn-secondary"/>
-                <Button text="Button Disabled" className="btn-disabled"/>
-                <Button text="Button Success" className="btn-success"/>
-                <Button text="Button Delete" className="btn-delete"/>
-            </div>
-            <div className="rating-container">
-                <RatingRound />
-                <RatingStar />
-            </div>
-            <div className="badge-container">
-                <Badge text="Badge" className="badge" />
-                <Badge text="Badge" className="badge-second" />
-                <BadgeColor />
-                <BadgeCloud />
-            </div>
-            <Modal />
+           <h1>Welcome to TMT Frontend Challenge</h1>
+           <h2>build by Fadhil</h2>
+           <br />
+           <p>Pick the project challenge:</p>
+           <Link className='hyperlink' to="/challenge01" target=''>
+                Challenge 01
+           </Link>
+           <br />
+           <Link className='hyperlink' to="/challenge02" target=''>
+                Challenge 02
+           </Link>
         </div>
     )
 }

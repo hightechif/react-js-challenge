@@ -1,0 +1,28 @@
+.section-1 {
+    background: #F2F2F2;
+    height: 820px;
+}
+
+.section-1 > h1 {
+    padding-top: 96px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    color: #000000;
+}
+
+.section-1 > p {
+    padding-top: 24px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
