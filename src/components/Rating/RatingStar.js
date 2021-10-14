@@ -1,6 +1,6 @@
 import React from 'react';
-import Star from '../../assets/img/Star.svg';
-import StarUnchecked from'../../assets/img/Star-unchecked.svg';
+import Star from '../../assets/icon/Star.svg';
+import StarUnchecked from'../../assets/icon/Star-unchecked.svg';
 
 function RatingStar() {
     return (
