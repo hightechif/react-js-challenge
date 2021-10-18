@@ -2,24 +2,24 @@
     width: inherit;
     height: inherit;
 }
-
+.boxes__container > ul {
+    padding: 0;
+}
 .boxes__items {
     margin-top: 88px;
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 30px;
 }
-
 .boxes__item {
-    margin: 0 15px;
     width: 370px;
 }
-
 .boxes__item__pic-wrap {
     width: inherit;
     height: 370px;
 }    
-
 .boxes__item__info {
     width: inherit;
     height: 132px;
@@ -28,12 +28,10 @@
     background: inherit;
     position: relative;
 }    
-
 .boxes__item__img {
     width: inherit;
     height: inherit;
 }    
-
 .boxes__item__text {
     font-family: Roboto;
     font-style: normal;
@@ -42,16 +40,19 @@
     line-height: 33px;
     color: #000000;
 } 
-
 .boxes__item__link {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 19px;
-
-    color: #000000;    
+    color: #000000;
     text-decoration: none;
     position: relative;
     top: 12px;
+}
+
+/*============================Mobile View===============================*/
+@media screen and (max-width: 640px) {
+    
 }
