@@ -1,3 +1,5 @@
+$marginSize: 5px;
+
 .challenge01 {
     display: grid;
     justify-content: center;
@@ -5,14 +7,14 @@
 }
 .button-container {
     display: flex;
-    margin: 5px;
+    margin: $marginSize;
 }
 .rating-container {
     display: flex;
     justify-content: flex-start;
-    margin: 5px;
+    margin: $marginSize;
 }
 .badge-container {
     display: flex;
-    margin: 5px; /*Conditional*/
+    margin: $marginSize;
 }
