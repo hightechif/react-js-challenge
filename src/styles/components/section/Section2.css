@@ -1,12 +1,10 @@
 .section-2 {
     margin-top: 40px;
+    padding-bottom: 52px;
     background: #F2F2F2;
-    height: 820px;
 }
-
 .section-2 > h3 {
     padding-top: 70px;
-    
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -15,12 +13,10 @@
     text-align: center;
     color: #000000;
 }
-
 .section-2 > p {
     padding-top: 25px;
     margin: 0 auto;
-    width: 800px;
-    
+    max-width: 800px;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
