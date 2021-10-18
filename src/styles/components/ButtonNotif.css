@@ -1,24 +1,31 @@
 .btn-notif {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    margin: 1rem 1rem;
-    background-color: #155980;
-    width: 160px;
-    height: 40px;
-    font-size: 24px;
-    color: white;
-    border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 1rem;
+  background-color: #155980;
+  width: 160px;
+  height: 40px;
+  font-size: 24px;
+  color: white;
+  border: none;
 }
 
 .circle {
-    position: absolute;
-    right: -12px;
-    top: -12px;
-    background-color: #ef0053;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    visibility: visible;
+  position: absolute;
+  right: -12px;
+  top: -12px;
+  background-color: #ef0053;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  visibility: visible;
 }
+/*# sourceMappingURL=ButtonNotif.css.map */

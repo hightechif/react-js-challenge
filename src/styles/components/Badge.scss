@@ -1,0 +1,74 @@
+.badge {
+    width: 79px;
+    height: 28px;
+    background: #0084F8;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 100px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 27px;
+    text-align: center;
+    align-items: center;
+    color: #FFFFFF;
+}
+.badge-second {
+    width: 79px;
+    height: 28px;
+    background: #FFFFFF;
+    border: 1px solid #0084F8;
+    box-sizing: border-box;
+    border-radius: 100px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 27px;
+    align-items: center;
+    text-align: center;
+    color: #0084F8;
+}
+.badge-color-container {
+    width: 262px;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.badge-color {
+    width: 79px;
+    height: 28px;
+    margin: 4px;
+    top: 0%;
+    left: 0%;
+    border-radius: 100px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 27px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+.D400 {
+    background: #001B36;
+}
+.R100 {
+    background: #FF8576;
+}
+.B100 {
+    background: #58C2F1;
+}
+.G110 {
+    background: #47C2B1;
+
+}
+.D200 {
+    background: #C9D6DF;
+    color: #001B36;
+}
+.D300 {
+    background: #52616B;
+}

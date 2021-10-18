@@ -1,52 +1,58 @@
 /*============================Desktop View===============================*/
 /* (min-width: 1025px) */
 .section-1 {
-    background: #F2F2F2;
-    padding-top: 96px;
-    padding-bottom: 137px;
-    box-sizing: border-box;
+  background: #F2F2F2;
+  padding-top: 96px;
+  padding-bottom: 137px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
 .section-1 > h1 {
-    box-sizing: border-box;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 32px;
-    line-height: 37px;
-    text-align: center;
-    color: #000000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 37px;
+  text-align: center;
+  color: #000000;
 }
+
 .section-1 > p {
-    padding-top: 24px;
-    box-sizing: border-box;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 24px;
-    text-align: center;
-    color: #000000;
+  padding-top: 24px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
 }
 
 /*============================Tablet View===============================*/
 @media screen and (min-width: 641px) and (max-width: 1024px) {
-    .section-1 {
-        padding-top: 25px;
-        padding-bottom: 25px;
-    }
-    .section-1 > p {
-        padding-top: 12px;
-    }
+  .section-1 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .section-1 > p {
+    padding-top: 12px;
+  }
 }
 
 /*============================Mobile View===============================*/
 @media screen and (max-width: 640px) {
-    .section-1 {
-        padding-top: 25px;
-        padding-bottom: 25px;
-    }
-    .section-1 > p {
-        padding-top: 12px;
-        font-size: 16px;
-    }
+  .section-1 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .section-1 > p {
+    padding-top: 12px;
+    font-size: 16px;
+  }
 }
+/*# sourceMappingURL=Section1.css.map */

@@ -1,11 +1,12 @@
 .home {
-    background: #F2F2F2;
-    padding-top: 15vh;
-    height: 85vh;
-    color: burlywood;
-    text-align: center;
+  background: #F2F2F2;
+  padding-top: 15vh;
+  height: 85vh;
+  color: burlywood;
+  text-align: center;
 }
 
 .home > .hyperlink {
-    color: burlywood;
+  color: burlywood;
 }
+/*# sourceMappingURL=home.css.map */

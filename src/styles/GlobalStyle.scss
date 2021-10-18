@@ -1,0 +1,20 @@
+$marginSize: 5px;
+
+.challenge01 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.button-container {
+    display: flex;
+    margin: $marginSize;
+}
+.rating-container {
+    display: flex;
+    justify-content: flex-start;
+    margin: $marginSize;
+}
+.badge-container {
+    display: flex;
+    margin: $marginSize;
+}

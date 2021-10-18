@@ -1,76 +1,88 @@
 /*============================Desktop View===============================*/
-.cards__container {
-}
 .cards__items {
-    margin-top: 64px;
-    padding-left: 0;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
+  margin-top: 64px;
+  padding-left: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
 }
+
 .cards__item {
-    width: 270px;
+  width: 270px;
 }
+
 .cards__item__pic-wrap {
-    width: 270px;
-    height: 270px;
+  width: 270px;
+  height: 270px;
 }
+
 .cards__item__img {
-    width: inherit;
-    height: inherit;
-}    
-.cards__item__info {
-    width: inherit;
-    height: 166px;
-    padding: 24px 24px;
-    box-sizing: border-box;
-    background: #FFFFFF;
-    position: relative;
-}    
-.cards__item__text {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 23px;
-    color: #000000;
+  width: inherit;
+  height: inherit;
 }
+
+.cards__item__info {
+  width: inherit;
+  height: 166px;
+  padding: 24px 24px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #FFFFFF;
+  position: relative;
+}
+
+.cards__item__text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+}
+
 .cards__item__link {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 19px;
-    color: #000000;    
-    text-decoration: none;
-    position: absolute;
-    bottom: 24px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+  text-decoration: none;
+  position: absolute;
+  bottom: 24px;
 }
 
 /*============================Tablet View===============================*/
 @media screen and (max-width: 1024px) {
-    .cards__container {
-    }
-    .cards__items {
-        margin: 20px;
-        padding-left: 80px;
-        padding-right: 80px;
-        display: flex;
+  .cards__items {
+    margin: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    }
-    .cards__item {
-        width: inherit;
-    }
-    .cards__item__info {
-        width: inherit;
-        height: 100px;
-    }
-    .cards__item__text {
-        font-size: 18px;
-    }
-    .cards__item__link {
-        bottom: 12px;
-    }
+  }
+  .cards__item {
+    width: inherit;
+  }
+  .cards__item__info {
+    width: inherit;
+    height: 100px;
+  }
+  .cards__item__text {
+    font-size: 18px;
+  }
+  .cards__item__link {
+    bottom: 12px;
+  }
 }
+/*# sourceMappingURL=Cards.css.map */
