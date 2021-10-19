@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Home from './pages/Home';
-import Notfound from "./pages/NotFound";
-import Challenge01 from "./pages/Challenge01";
-import Challenge02 from "./pages/Challenge02";
+import Home from './layout/Home';
+import Notfound from "./layout/NotFound";
+import Challenge01 from "./layout/Challenge01";
+import Challenge02 from "./layout/Challenge02";
 import Cards from "./components/Cards/Cards";
 
 function Router() {
