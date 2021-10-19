@@ -1,5 +1,7 @@
+@use '../base/variables' as *;
+
 .home {
-    background: #F2F2F2;
+    background: $main-bg-color;
     padding-top: 15vh;
     height: 85vh;
     color: burlywood;
