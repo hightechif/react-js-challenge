@@ -1,9 +1,9 @@
 .boxes__container {
     width: inherit;
     height: inherit;
-}
-.boxes__container > ul {
-    padding: 0;
+    ul {
+        padding: 0;
+    }
 }
 .boxes__items {
     margin-top: 88px;

@@ -1,5 +1,5 @@
 import React from 'react';
-import Boxes from '../Box/Boxes';
+import Boxes from '../../components/Box/Boxes';
 
 const Section2 = () => {
     return (
