@@ -1,12 +1,11 @@
 @use '../base/variables' as *;
 
 .home {
-    background: $main-bg-color;
+    background: map-get($main-bg, 'home');
     padding-top: 15vh;
     height: 85vh;
     color: burlywood;
     text-align: center;
-    
     > .hyperlink {
         color: burlywood;
     }
