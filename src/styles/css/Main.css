@@ -1,3 +1,124 @@
+.section-1 h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 37px;
+  text-align: center;
+  color: #000000;
+}
+.section-1 p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+}
+
+.section-2 h3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #000000;
+}
+.section-2 p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #000000;
+}
+
+.section-3 > div:nth-child(1) p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 56px;
+  line-height: 66px;
+  color: #FFFFFF;
+}
+.section-3 > div:nth-child(2) p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  color: #FFFFFF;
+}
+.section-3 > div:nth-child(2) p:nth-child(1) {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+}
+.section-3 > div:nth-child(2) p:nth-child(2) {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.content p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  color: #000000;
+}
+
+.section-4 .description {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+}
+.section-4 .description p {
+  font-size: 14px;
+  line-height: 20px;
+}
+.section-4 .description h1 {
+  font-size: 48px;
+  line-height: 56px;
+}
+.section-4 .description .hyperlink {
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+.section-4 .article h3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 34px;
+}
+.section-4 .article p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+}
+.section-4 .article .hyperlink {
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@media screen and (max-width: 640px) {
+  .section-1 p {
+    font-size: 16px;
+  }
+}
 .badge {
   width: 79px;
   height: 28px;
@@ -93,39 +214,31 @@
   margin: 4px;
   padding-left: 8px;
   padding-right: 8px;
-  /* stroke/round */
   position: relative;
   left: 0%;
   right: 0%;
   top: 0%;
   bottom: 0%;
-  /* primary/b200 */
   box-sizing: border-box;
   border-radius: 100px;
-  /* body/default */
   font-family: "Open Sans";
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 27px;
-  /* identical to box height */
   align-items: center;
   text-align: center;
 }
 
 .bd-primary {
-  /* primary/b200 */
   background: #0084F8;
   color: #FFFFFF;
-  /* primary/b200 */
   border: 1px solid #0084F8;
 }
 
 .bd-secondary {
-  /* primary/b200 */
   background: #FFFFFF;
   color: #0084F8;
-  /* primary/b200 */
   border: 1px solid #0084F8;
 }
 
@@ -133,8 +246,7 @@
   width: inherit;
   height: inherit;
 }
-
-.boxes__container > ul {
+.boxes__container ul {
   padding: 0;
 }
 
@@ -365,117 +477,94 @@
 }
 
 .modal-rectangle {
-  /* Rectangle 2 */
   position: absolute;
   height: 2px;
   left: 0%;
   right: 0%;
   top: 0px;
-  /* gradient/b200-d400 */
   background: linear-gradient(83.47deg, #0084F8 9.02%, #001B36 90.81%);
 }
 
 .modal-container {
   width: 391px;
   height: 253px;
-  /* fill/hard */
   position: absolute;
   left: 0%;
   right: 0%;
   top: 2px;
   bottom: 0%;
-  /* primary/white */
   background: #FFFFFF;
-  /* secondary/d200 */
   border: 2px solid #C9D6DF;
   display: flex;
   justify-content: center;
 }
-
-.title {
-  /* Invite teammates */
-  position: absolute;
-  width: 150px;
-  height: 17px;
-  left: 48px;
-  top: 40px;
-  /* label/default */
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  /* identical to box height */
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  /* primary/d400 */
-  color: #001B36;
-}
-
-.modal-container > input {
+.modal-container input {
   width: 295px;
   height: 40px;
   padding-left: 8px;
-  /* stroke/hard */
   position: absolute;
   left: 48px;
   right: 0%;
   top: 57px;
   bottom: 0%;
-  /* primary/white */
   background: #FFFFFF;
-  /* secondary/d200 */
   border: 1px solid #C9D6DF;
   box-sizing: border-box;
-  /* body/default */
   font-family: "Open Sans";
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 27px;
 }
-
-.modal-container > input::placeholder {
-  /* Enter email address or name */
+.modal-container input::placeholder {
   position: absolute;
   width: 216px;
   height: 28px;
   left: 8px;
   top: 6px;
-  /* body/default */
   font-family: "Open Sans";
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 27px;
-  /* identical to box height */
   display: flex;
   align-items: center;
-  /* secondary/d200 */
   color: #C9D6DF;
+}
+
+.title {
+  position: absolute;
+  width: 150px;
+  height: 17px;
+  left: 48px;
+  top: 40px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #001B36;
 }
 
 .add-message {
   background: #FFFFFF;
   border: none;
-  /* + Add message */
   position: absolute;
   width: 114px;
   height: 28px;
   left: 48px;
   top: 113px;
-  /* body/default */
   font-family: "Open Sans";
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 27px;
-  /* identical to box height */
   display: flex;
   align-items: center;
-  /* primary/b200 */
   color: #0084F8;
 }
 
@@ -483,59 +572,18 @@
   background: #FFFFFF;
   width: 194px;
   height: 40px;
-  /* fill/hard */
   position: absolute;
   left: 99px;
   bottom: 40px;
-  /* primary/b200 */
   border: 1px solid #0084F8;
   box-sizing: border-box;
-  /* body/large */
   font-family: "Open Sans";
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 34px;
   text-align: center;
-  /* primary/b200 */
   color: #0084F8;
-}
-
-.rating {
-  float: left;
-}
-
-.rating span {
-  float: right;
-  position: relative;
-}
-
-.rating span input {
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
-  opacity: 0;
-}
-
-.rating span label {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  text-align: center;
-  background: #0084F8;
-  opacity: 0.4;
-  margin-right: 5px;
-  border-radius: 100px;
-  -webkit-border-radius: 100px;
-}
-
-.rating span:hover ~ span label,
-.rating span:hover label,
-.rating span.checked label,
-.rating span.checked ~ span label {
-  opacity: 1;
 }
 
 .home {
@@ -577,26 +625,9 @@
   padding-bottom: 137px;
   box-sizing: border-box;
 }
-.section-1 > h1 {
-  box-sizing: border-box;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 32px;
-  line-height: 37px;
-  text-align: center;
-  color: #000000;
-}
-.section-1 > p {
+.section-1 p {
   padding-top: 24px;
   box-sizing: border-box;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 24px;
-  text-align: center;
-  color: #000000;
 }
 
 .section-2 {
@@ -604,27 +635,14 @@
   padding-bottom: 52px;
   background: #F2F2F2;
 }
-.section-2 > h3 {
+.section-2 h3 {
   padding-top: 70px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 28px;
-  text-align: center;
-  color: #000000;
+  box-sizing: border-box;
 }
-.section-2 > p {
+.section-2 p {
   padding-top: 25px;
   margin: 0 auto;
   max-width: 800px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 27px;
-  text-align: center;
-  color: #000000;
 }
 
 .section-3 {
@@ -644,62 +662,41 @@
   background: #000000;
   padding: 56px 47px;
   box-sizing: border-box;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 56px;
-  line-height: 66px;
-  color: #FFFFFF;
 }
 .section-3 > div:nth-child(2) {
   background: #888888;
-  /* padding: 38px 26px 25px; */
-  /* box-sizing: border-box; */
 }
 .section-3 > div:nth-child(2) > p {
   margin: 38px 25px 0px;
   background: #000000;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  color: #FFFFFF;
 }
 .section-3 > div:nth-child(2) > p:nth-child(1) {
   padding: 12px 23px;
-  margin-right: 239px;
   box-sizing: border-box;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 20px;
+  margin-right: 239px;
 }
 .section-3 > div:nth-child(2) > p:nth-child(2) {
   padding: 26px 20px;
+  box-sizing: border-box;
   margin-top: 15px;
   margin-bottom: 20px;
-  box-sizing: border-box;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 34px;
 }
 .section-3 > div:nth-child(3) {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 30px;
 }
 .section-3 .content {
+  background: #FFFFFF;
   height: 50%;
   padding-left: 47px;
   padding-right: 24px;
   padding-bottom: 41px;
   box-sizing: border-box;
-  background: #FFFFFF;
 }
 .section-3 .content > p {
   box-sizing: border-box;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  color: #000000;
 }
 .section-3 .content > p:nth-child(1) {
   padding-top: 40px;
@@ -727,22 +724,22 @@
   box-sizing: border-box;
   background: #F2F2F2;
 }
-.section-4 .section-4__wrapper {
+.section-4__wrapper {
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
 }
-.section-4 .section-4__wrapper div {
+.section-4__wrapper div {
   margin: 0 auto;
 }
-.section-4 .section-4__wrapper div:nth-child(1) {
+.section-4__wrapper div:nth-child(1) {
   box-sizing: border-box;
   background: #000000;
   color: #FFFFFF;
   display: flex;
 }
-.section-4 .section-4__wrapper div:nth-child(2) {
+.section-4__wrapper div:nth-child(2) {
   display: flex;
   gap: 30px;
 }
@@ -758,30 +755,14 @@
   padding-left: 78px;
   padding-right: 40px;
   box-sizing: border-box;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
   display: flex;
   flex-direction: column;
 }
 .description p {
   padding-bottom: 16px;
-  font-size: 14px;
-  line-height: 20px;
 }
 .description h1 {
   padding-bottom: 50px;
-  font-size: 48px;
-  line-height: 56px;
-}
-.description > .hyperlink {
-  text-decoration: none;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 25px;
-  color: #FFFFFF;
 }
 
 .article {
@@ -790,30 +771,11 @@
   padding: 48px;
   box-sizing: border-box;
 }
-.article h3 {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 34px;
-}
 .article p {
   top: 16px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 25px;
 }
 .article > .hyperlink {
   bottom: -50px;
-  text-decoration: none;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
 }
 
 @media screen and (min-width: 641px) and (max-width: 1024px) {
@@ -847,13 +809,12 @@
   }
   .section-1 > p {
     padding-top: 12px;
-    font-size: 16px;
   }
 
-  .section-4 .section-4__wrapper > div:nth-child(1) {
+  .section-4__wrapper > div:nth-child(1) {
     flex-direction: column;
   }
-  .section-4 .section-4__wrapper > div:nth-child(2) {
+  .section-4__wrapper > div:nth-child(2) {
     flex-direction: column;
   }
   .section-4 .box__item__img {

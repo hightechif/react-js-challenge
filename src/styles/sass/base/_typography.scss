@@ -1,5 +1,113 @@
-@mixin font-template {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
+@use '../abstracts/type' as *;
+
+.section-1 {
+    h1 {
+        @include font-template;
+        font-size: 32px;
+        line-height: 37px;
+        text-align: center;
+        color: #000000;
+    }
+    p {
+        @include font-template;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+        color: #000000;
+    }
+}
+.section-2 {
+    h3 {
+        @include font-template;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        color: #000000;
+    }
+    p {
+        @include font-template;
+        font-size: 18px;
+        line-height: 27px;
+        text-align: center;
+        color: #000000;
+    }
+}
+.section-3 {
+    > div:nth-child(1) {
+        p {
+            @include font-template;
+            font-size: 56px;
+            line-height: 66px;
+            color: #FFFFFF;
+        }
+    }
+    > div:nth-child(2) {
+        p {
+            @include font-template;
+            color: #FFFFFF;
+            &:nth-child(1) {
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 20px;
+            }
+            &:nth-child(2) {
+                font-weight: normal;
+                font-size: 24px;
+                line-height: 34px;
+            }
+        }
+    } 
+}
+.content {
+    p {
+        @include font-template;
+        color: #000000;
+    }
+}
+.section-4 {
+    .description {
+        @include font-template;
+        p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        h1 {
+            font-size: 48px;
+            line-height: 56px;
+        }
+        .hyperlink {
+            text-decoration: none;
+            @include font-template;
+            font-size: 18px;
+            line-height: 25px;
+            color: #FFFFFF;
+        }
+    }
+    .article {
+        h3 {
+            @include font-template;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 34px;
+        }
+        p {
+            @include font-template;
+            font-size: 18px;
+            line-height: 25px;
+        }
+        .hyperlink {
+            text-decoration: none;
+            @include font-template;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .section-1 {
+        p {
+            font-size: 16px;
+        }
+    }
 }
