@@ -6,7 +6,7 @@ import Section4 from '../layout/Section/Section4';
 
 const Challenge02 = (props) => {
     return (
-        <div className="posts-page">
+        <div className="challenge-2">
             <Section1 />
             <Section2 />
             <Section3 />

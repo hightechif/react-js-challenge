@@ -1,10 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+
+const CardItemStyle = styled.li`
+	width: 270px;
+`;
 
 function CardItem(props) {
 	return (
 		<>
-			<li className='cards__item'>
+			<CardItemStyle>
 				<figure className='cards__item__pic-wrap'>
 					<img
 						className='cards__item__img'
@@ -16,7 +21,7 @@ function CardItem(props) {
 					<h3 className='cards__item__text'>{props.text}</h3>
 					<Link className='cards__item__link' to={props.path} target=''>See More {'>'}</Link>
 				</div>
-			</li>
+			</CardItemStyle>
 		</>
 	)
 }
