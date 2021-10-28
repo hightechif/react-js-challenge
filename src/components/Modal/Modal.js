@@ -1,8 +1,9 @@
 import React from 'react';
+import { StyledModal } from './Modal.styled';
 
 const Modal = (props) => {
     return (
-        <div className="modal-frame">
+        <StyledModal>
             <div className="modal-rectangle"></div>
             <div className="modal-container">
                 <div className="title">INVITE TEAMMATES</div>
@@ -10,7 +11,7 @@ const Modal = (props) => {
                 <button className="add-message">+ add message</button>
                 <button className="copy-button">Copy magic link</button>
             </div>
-        </div>
+        </StyledModal>
     )
 }
 
