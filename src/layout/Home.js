@@ -15,6 +15,10 @@ const Home = ({text, className, decorator}) => {
            <Link className='hyperlink' to="/challenge02" target=''>
                 Challenge 02 - Landing Page
            </Link>
+           <br />
+           <Link className='hyperlink' to="/challenge03" target=''>
+                Challenge 03 - Master UI
+           </Link>
         </div>
     )
 }
