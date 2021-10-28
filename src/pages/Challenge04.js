@@ -3,7 +3,7 @@ import IndomaretTheme from '../assets/Theme';
 
 import { Button, Table } from "@elevenia/master-ui/components/Atom";
 
-const Challenge03 = () => {
+const Challenge04 = () => {
 	require('@elevenia/master-ui/Theme/index.css');
 	require('@elevenia/master-ui/assets/index.css');
 	return (
@@ -74,4 +74,4 @@ const Challenge03 = () => {
 	)
 }
 
-export default Challenge03;
+export default Challenge04;
