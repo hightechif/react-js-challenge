@@ -434,6 +434,43 @@
     bottom: 12px;
   }
 }
+.rating {
+  float: left;
+}
+
+.rating span {
+  float: right;
+  position: relative;
+}
+
+.rating span input {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  opacity: 0;
+}
+
+.rating span label {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  background: #0084F8;
+  opacity: 0.4;
+  margin-right: 5px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+}
+
+.rating span:hover ~ span label,
+.rating span:hover label,
+.rating span.checked label,
+.rating span.checked ~ span label {
+  opacity: 1;
+}
+
 .home {
   background: #F2F2F2;
   padding-top: 15vh;
