@@ -27,6 +27,14 @@
     font-size: 2rem;
     display: flex;
     align-items: center;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.logo {
+    margin-left: 0.5rem;
+    width: 40px;
 }
 
 .fa-typo3 {
@@ -54,13 +62,15 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 1.5rem 1rem 1rem 1rem;
+    box-sizing: border-box;
     height: 100%;
 }
 
 .nav-links:hover {
     border-bottom: 4px solid #fff;
     transition: all 0.2s ease-out;
+    text-decoration: none;
 }
 
 .fa-bars {

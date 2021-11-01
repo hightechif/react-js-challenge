@@ -9,25 +9,25 @@ const HeroSection = () => {
 			<h1>TMT Frontend Challenges</h1>
 			<p>by Ridhan Fadhilah</p>
 			<div className="hero-btns">
-				<Link to='//github.com/ridhanf' target='_blank' className='btn-mobile'>
+				<Link to='//linkedin.com/in/ridhanf' target='_blank' className='btn-mobile'>
 					<Button
 						className='hero-btns'
 						buttonStyle='btn--outline'
 						buttonSize='btn--large'
 					>
-						SEE GITHUB
+						SEE LINKEDIN
 					</Button>
 				</Link>
-				<a href='#portfolios' style={{ textDecoration: 'none', color: 'black' }}>
+				<Link to='//github.com/ridhanf/react-js-challenge' target='_blank' style={{ textDecoration: 'none', color: 'black' }}>
 					<Button
 						className='hero-btns'
 						buttonStyle='btn--primary'
 						buttonSize='btn--large'
 					>
-						PORTFOLIOS
-						<i className='far fa-play-circle' />
+						SOURCE CODE
+						<i className='far fa-solid fa-file-code' />
 					</Button>
-				</a>
+				</Link>
 			</div>
 		</StyledHero>
 	)

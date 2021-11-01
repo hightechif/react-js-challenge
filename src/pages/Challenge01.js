@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Button from '../components/Button/Button';
 import ButtonNotif from '../components/Button/ButtonNotif';
 import RatingRound from '../components/Rating/RatingRound';
@@ -9,6 +9,12 @@ import BadgeColor from '../components/Badge/BadgeColor';
 import BadgeCloud from '../components/Badge/BadgeCloud';
 
 const Challenge01 = ({text, className, decorator}) => {
+    const [open,setopen] = useState(false);
+
+    const onClickFunction = () => {
+        setopen(!open)
+    }
+
     return (
         <div className="challenge01">
             <ButtonNotif text="Pesan" className="btn-notif" decorator="circle"/>
@@ -29,7 +35,8 @@ const Challenge01 = ({text, className, decorator}) => {
                 <BadgeColor />
                 <BadgeCloud />
             </div>
-            <Modal />
+            <button className="btn-primary" onClick={() => onClickFunction()}>Modal Button</button>
+            {open && <Modal/>}
         </div>
     )
 }

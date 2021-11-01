@@ -345,6 +345,10 @@
   cursor: pointer;
 }
 
+.btn:hover {
+  text-decoration: none;
+}
+
 .btn--primary {
   background-color: var(--primary);
   color: #242424;
@@ -357,11 +361,13 @@
   padding: 8px 20px;
   border: 1px solid var(--primary);
   transition: all 0.3s ease-out;
+  text-decoration: none;
 }
 
 .btn--medium {
   padding: 8px 20px;
   font-size: 18px;
+  text-decoration: none;
 }
 
 .btn--large {
@@ -374,6 +380,14 @@
   background: #fff;
   color: #242424;
   transition: all 0.3s ease-out;
+  text-decoration: none;
+}
+
+.btn-mobile {
+  text-decoration: none;
+}
+.btn-mobile:hover {
+  text-decoration: none;
 }
 
 .btn-notif {
@@ -783,6 +797,14 @@
   display: flex;
   align-items: center;
 }
+.navbar-logo:hover {
+  text-decoration: none;
+}
+
+.logo {
+  margin-left: 0.5rem;
+  width: 40px;
+}
 
 .fa-typo3 {
   margin-left: 0.5rem;
@@ -809,13 +831,15 @@
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  padding: 1.5rem 1rem 1rem 1rem;
+  box-sizing: border-box;
   height: 100%;
 }
 
 .nav-links:hover {
   border-bottom: 4px solid #fff;
   transition: all 0.2s ease-out;
+  text-decoration: none;
 }
 
 .fa-bars {
@@ -1116,6 +1140,7 @@
   padding-top: 54px;
   padding-left: 78px;
   padding-right: 40px;
+  padding-bottom: 0;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -1124,7 +1149,7 @@
   padding-bottom: 16px;
 }
 .description h1 {
-  padding-bottom: 50px;
+  margin: 0 0;
 }
 
 .article {
@@ -1137,7 +1162,7 @@
   top: 16px;
 }
 .article > .hyperlink {
-  bottom: -50px;
+  bottom: 50px;
 }
 
 @media screen and (min-width: 641px) and (max-width: 1024px) {
@@ -1159,9 +1184,6 @@
   .section-4 .description {
     padding-top: 25px;
     padding-left: 50px;
-  }
-  .section-4 .description h1 {
-    padding-bottom: 50px;
   }
 }
 @media screen and (max-width: 640px) {

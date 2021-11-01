@@ -131,6 +131,7 @@
     padding-top: 54px;
     padding-left: 78px;
     padding-right: 40px;
+    padding-bottom: 0;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -138,7 +139,7 @@
         padding-bottom: 16px;
     }
     h1 {
-        padding-bottom: 50px;
+        margin: 0 0;
     }
 }
 .article {
@@ -150,7 +151,7 @@
         top: 16px;
     }
     > .hyperlink {
-        bottom: -50px;
+        bottom: 50px;
     }
 }
 
@@ -174,9 +175,6 @@
         .description {
             padding-top: 25px; 
             padding-left: 50px;
-            h1 {
-                padding-bottom: 50px;
-            }
         }
     }
 }

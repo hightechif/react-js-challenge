@@ -7,6 +7,8 @@ import Challenge02 from "./pages/Challenge02";
 import Challenge03 from "./pages/Challenge03";
 import Challenge04 from "./pages/Challenge04";
 import Notfound from "./pages/NotFound";
+// Slider
+// Profile Page
 
 function Router() {
 	return (

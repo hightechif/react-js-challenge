@@ -48,7 +48,7 @@ export const StyledHero = styled.div`
         margin: 6px;
     }
 
-    .fa-play-circle {
+    .fa-file-code {
         margin-left: 4px;
     }
 
