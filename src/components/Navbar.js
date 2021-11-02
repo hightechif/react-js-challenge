@@ -37,43 +37,13 @@ const Navbar = () => {
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
                             <Link 
-                                to='/challenge01'
+                                to='/challenges'
                                 target=''
                                 className='nav-links'
-                                href='/challenge01'
+                                href='/challenges'
                                 onClick={closeMobileMenu}
                             >
-                                Challenge01
-                            </Link>
-                        </li>
-                        <li className='nav-item'>
-                            <Link
-                                to='/challenge02'
-                                target=''
-                                className='nav-links'
-                                onClick={closeMobileMenu}
-                            >
-                                Challenge02
-                            </Link>
-                        </li>
-                        <li className='nav-item'>
-                            <Link
-                                to='/challenge03'
-                                target=''
-                                className='nav-links'
-                                onClick={closeMobileMenu}
-                            >
-                                Challenge03
-                            </Link>
-                        </li>
-                        <li className='nav-item'>
-                            <Link
-                                to='/challenge04'
-                                target=''
-                                className='nav-links'
-                                onClick={closeMobileMenu}
-                            >
-                                Challenge04
+                                Challenges
                             </Link>
                         </li>
                         <li>
