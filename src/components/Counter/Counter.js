@@ -1,8 +1,9 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import CounterDisplay from './CounterDisplay/CounterDisplay';
 import CounterButton from './CounterButton/CounterButton';
 import CounterInput from './CounterInput/CounterInput';
 import styled from 'styled-components';
+import randomColor from 'randomcolor';
 
 const StyledCounter = styled.div`
     justify-content: center;
@@ -12,9 +13,10 @@ const StyledCounter = styled.div`
 
 const Counter = () => {
     // State
-    const [ count, setCount ] = useState(5);
+    const [ count, setCount ] = useState(0);
     const [ quota, setQuota ] = useState(5);
     const [ results, setResults ] = useState([]);
+    const [ color, setColor ] = useState('#FFC0CB');
 
     const counterChangeHandler = (action, value = 1) => {
         switch(action) {
@@ -28,7 +30,7 @@ const Counter = () => {
     }
 
     const onQuotaChangeHandler = (event) => {
-        return setQuota(event.target.value);
+        return setQuota(event.target.value || 5);
     }
 
     const storeHandler = () => {
@@ -42,9 +44,22 @@ const Counter = () => {
         return setResults(results.filter((el) => el.id !== id));
     }
 
+    // Random color generator with ComponentDidUpdate
+    const mounted = useRef();
+    useEffect(() => {
+        if (!mounted.current) {
+            // do componentDidMount logic
+            mounted.current = true;
+        } else {
+            // do componentDidUpdate logic
+            const newColor = randomColor();
+            setColor(newColor);
+        }
+    }, [count])
+
     return (
         <StyledCounter>
-            <CounterDisplay value={count}/>
+            <CounterDisplay value={count} color={color}/>
             <CounterButton 
                 label="+" 
                 clicked={() => counterChangeHandler("tambah")}
