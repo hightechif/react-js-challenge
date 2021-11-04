@@ -58,6 +58,15 @@ const Challenges = () => {
                     Challenge06 - Counter App
                 </Link>
             </li>
+            <li className='nav-item'>
+                <Link
+                    to='/challenge07'
+                    target=''
+                    className='nav-links'
+                >
+                    Challenge07 - Form
+                </Link>
+            </li>
         </div>
     )
 }

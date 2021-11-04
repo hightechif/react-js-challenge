@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@craco/craco": "^6.4.0",
     "@elevenia/master-ui": "^2.6.5",
+    "@headlessui/react": "^1.4.1",
+    "@heroicons/react": "^1.0.5",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -15,13 +18,15 @@
     "react-router-dom": "^5.3.0",
     "react-scripts": "4.0.3",
     "styled-components": "^5.3.3",
+    "tailwindcss": "^2.2.19",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "sass": "sass --watch src/styles/sass/Main.scss:src/styles/css/Main.css",
     "test": "react-scripts test",
+    "sass": "sass --watch src/styles/sass/Main.scss:src/styles/css/Main.css",
+    "tailwind": "tailwind build -i src/styles/css/Tailwind.css -o public/style.css",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
