@@ -9,6 +9,7 @@ import Challenge03 from "./pages/Challenge03";
 import Challenge04 from "./pages/Challenge04";
 import Challenge05 from "./pages/Challenge05";
 import Challenge06 from "./pages/Challenge06";
+import Challenge07 from "./pages/Challenge07";
 import Notfound from "./pages/NotFound";
 // Slider
 // Profile Page
@@ -26,6 +27,7 @@ function Router() {
 				<Route exact path="/challenge04" component={Challenge04} />
 				<Route exact path="/challenge05" component={Challenge05} />
 				<Route exact path="/challenge06" component={Challenge06} />
+				<Route exact path="/challenge07" component={Challenge07} />
 				<Route component={Notfound} />
 			</Switch>
 		</BrowserRouter>
