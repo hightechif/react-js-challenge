@@ -1,4 +1,3 @@
-import { render } from '@testing-library/react';
 import { useState } from 'react';
 import styled from 'styled-components';
 import Form from '../components/Form/Form';
@@ -72,26 +71,14 @@ const Challenge07 = () => {
         const { value, name, checked } = event.target
         if (name === "hobby") {
             if (checked) {
-                setBiodata(prev => ({
-                    ...prev,
-                    [name]: [...biodata.hobby, value]
-                }))
+                setBiodata(prev => ({...prev, [name]: [...biodata.hobby, value]}))
             } else {
-                setBiodata(prev => ({
-                    ...prev,
-                    [name]: biodata.hobby.filter(x => x !== value)
-                }))
+                setBiodata(prev => ({...prev, [name]: biodata.hobby.filter(x => x !== value)}))
             }
         } else if (name === "happiness") {
-            setBiodata(prev => ({
-                ...prev,
-                [name]: parseInt(value, 10)
-            }))
+            setBiodata(prev => ({...prev, [name]: parseInt(value, 10)}))
         } else {
-            setBiodata(prev => ({
-                ...prev,
-                [name]: value
-            }))
+            setBiodata(prev => ({...prev, [name]: value}))
         }
     }
 
@@ -101,9 +88,17 @@ const Challenge07 = () => {
 
     const handleSubmit = (event) => {
         if (!updateMode) {
-            let formFilled = Object.values(biodata).every(v => v !== "");
+            let biodataKeys = Object.keys(biodata).filter(key => key !== "website");
+            const arrayObj = biodataKeys.reduce((acc, val, id) => {
+                acc.push({
+                    [val]:biodata[val]
+                })
+                return acc; 
+            }, [])
+            const biodataWithoutWebsite = Object.assign({}, ...arrayObj);
+            let formFilled = Object.values(biodataWithoutWebsite).every(v => v !== "");
             let isNIKExist = checkNIKExsistence(biodata["NIK"]);
-            if (biodata !== bioTemplate && biodata.username !== "" && biodata.email !== "" && data[data.length - 1] !== biodata && formFilled && isNIKExist) {
+            if (biodata !== bioTemplate && biodata.username !== "" && biodata.email !== "" && data[data.length - 1] !== biodata && formFilled && !isNIKExist) {
                 setData([
                     ...data,
                     biodata
@@ -129,11 +124,10 @@ const Challenge07 = () => {
         const {value} = event.target;
         setupdateMode(true);
         data.forEach((x) => {
-            if (x["NIK"] === value) {
+            if (x.NIK === value) {
                 setBiodata(x);
             }
-        })
-        
+        });
     }
 
     const handleDelete = (event) => {

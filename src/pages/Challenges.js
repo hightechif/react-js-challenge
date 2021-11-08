@@ -10,7 +10,7 @@ const Challenges = () => {
                     className='nav-links'
                     href='/challenge01'
                 >
-                    Challenge01 - React Components
+                    Challenge01 - React Components (HTML, CSS)
                 </Link>
             </li>
             <li className='nav-item'>
@@ -19,7 +19,7 @@ const Challenges = () => {
                     target=''
                     className='nav-links'
                 >
-                    Challenge02 - Responsive Design
+                    Challenge02 - Responsive Design (Media Query & SASS)
                 </Link>
             </li>
             <li className='nav-item'>
@@ -37,7 +37,7 @@ const Challenges = () => {
                     target=''
                     className='nav-links'
                 >
-                    Challenge04 - Elevenia Master-UI
+                    Challenge04 - Elevenia Master-UI (Private Component Library)
                 </Link>
             </li>
             <li className='nav-item'>
@@ -46,7 +46,7 @@ const Challenges = () => {
                     target=''
                     className='nav-links'
                 >
-                    Challenge05 - To Do List
+                    Challenge05 - To Do List (React Props & State)
                 </Link>
             </li>
             <li className='nav-item'>
@@ -55,7 +55,7 @@ const Challenges = () => {
                     target=''
                     className='nav-links'
                 >
-                    Challenge06 - Counter App
+                    Challenge06 - Counter App (React CRUD)
                 </Link>
             </li>
             <li className='nav-item'>
@@ -64,7 +64,7 @@ const Challenges = () => {
                     target=''
                     className='nav-links'
                 >
-                    Challenge07 - Form
+                    Challenge07 - Form & Table (React Form CRUD, Tailwind)
                 </Link>
             </li>
         </div>

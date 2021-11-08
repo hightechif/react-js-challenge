@@ -6,7 +6,6 @@ import '@elevenia/master-ui/Theme/index.css';
 
 const TableDisplay = (props) => {
 	const { data, onUpdate, onDelete } = props;
-	let biodata;
 	const columns = Object.keys(data[0]);
 
 	const createTable = () => {
@@ -16,10 +15,10 @@ const TableDisplay = (props) => {
 		for (let i = 0; i < data.length; i++) {
 			let children = []
 			//Inner loop to create children
-			biodata = data[i]
+			let biodata = data[i]
 			for (let j = 0; j < columns.length; j++) {
 				if (columns[j] !== "password") {
-					children.push(<td key={`${biodata["NIK"]} ${columns[j]}`}>{biodata[columns[j]]}</td>)
+					children.push(<td key={`${biodata["NIK"]} ${columns[j]}`}>{biodata[columns[j]].toString()}</td>);
 				}
 			}
 			let NIK = biodata["NIK"]

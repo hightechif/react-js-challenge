@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@craco/craco": "^6.4.0",
     "@elevenia/master-ui": "^2.6.5",
     "@headlessui/react": "^1.4.1",
     "@heroicons/react": "^1.0.5",

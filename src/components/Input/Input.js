@@ -13,7 +13,7 @@ const Input = (props) => {
             </label>
             <input name={props.name} id={props.name} type={props.type} value={props.value} onChange={props.onChange} placeholder={props.placeholder} className="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" />
             {!props.isFilled && <p className="text-red-500 text-xs italic">Please fill out this field.</p>}
-            {props.notes && <p className="text-gray-600 text-xs italic">{props.notes}</p>}
+            {props.isFilled && props.notes && <p className="text-gray-600 text-xs italic">{props.notes}</p>}
         </div>
     )
 }
