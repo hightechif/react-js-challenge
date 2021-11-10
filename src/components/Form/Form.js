@@ -1,4 +1,5 @@
 import Input from "../Input/Input";
+import { Button } from "@elevenia/master-ui/components/Atom";
 
 const Form = (props) => {
     const {biodata, isFormFilled, handleChange, handleSubmit, handleReset, isUpdateMode} = props;
@@ -77,13 +78,13 @@ const Form = (props) => {
 
             <div className="flex flex-wrap -mx-3 mb-6">
                 {!isUpdateMode && <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                    <button type="submit" className="w-full font-bold text-xl">Submit</button>
+                    <Button type="submit" className="w-full font-bold text-xl" variant="secondary">Submit</Button>
                 </div>}
                 {isUpdateMode && <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                    <button type="submit" className="w-full font-bold text-xl">Update</button>
+                    <Button type="submit" className="w-full font-bold text-xl" variant="secondary">Update</Button>
                 </div>}
                 <div className="w-full md:w-1/2 px-3">
-                    <input type="reset" onClick={handleReset} className="w-full text-xl" />
+                    <Button type="reset" onClick={handleReset} className="w-full text-xl" variant="secondary">Reset</Button>
                 </div>
             </div>
         </form>
