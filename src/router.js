@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from './components/Navbar'
 import Home from './pages/Home';
 import Challenges from "./pages/Challenges";
@@ -18,18 +18,18 @@ function Router() {
 	return (
 		<BrowserRouter>
 			<Navbar />
-			<Switch>
-				<Route exact path="/" component={Home} />
-				<Route exact path="/challenges" component={Challenges} />
-				<Route exact path="/challenge01" component={Challenge01} />
-				<Route exact path="/challenge02" component={Challenge02} />
-				<Route exact path="/challenge03" component={Challenge03} />
-				<Route exact path="/challenge04" component={Challenge04} />
-				<Route exact path="/challenge05" component={Challenge05} />
-				<Route exact path="/challenge06" component={Challenge06} />
-				<Route exact path="/challenge07" component={Challenge07} />
-				<Route component={Notfound} />
-			</Switch>
+			<Routes>
+				<Route path="/" element={<Home />} />
+				<Route path="/challenges" element={<Challenges />} />
+				<Route path="/challenge01" element={<Challenge01 />} />
+				<Route path="/challenge02" element={<Challenge02 />} />
+				<Route path="/challenge03" element={<Challenge03 />} />
+				<Route path="/challenge04" element={<Challenge04 />} />
+				<Route path="/challenge05" element={<Challenge05 />} />
+				<Route path="/challenge06" element={<Challenge06 />} />
+				<Route path="/challenge07" element={<Challenge07 />} />
+				<Route path="*" element={<Notfound />} />
+			</Routes>
 		</BrowserRouter>
 	)
 };
