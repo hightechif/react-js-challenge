@@ -1,14 +1,12 @@
 import Router from './router';
-import { ThemeProvider } from 'styled-components'
-import IndomaretTheme from './assets/Theme';
-import './App.css';
+import GlobalStyled from './styles/Global.styled';
 import './styles/css/Main.css';
 
 function App() {
   return (
-    <ThemeProvider theme={IndomaretTheme}>
+    <GlobalStyled>
       <Router />
-    </ThemeProvider>
+    </GlobalStyled>
   );
 }
 
