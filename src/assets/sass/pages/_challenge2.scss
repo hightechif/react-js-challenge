@@ -2,11 +2,11 @@
 
 .section-1 {
     background: map-get($main-bg, 'section-1');
-    padding-top: 96px;
+    padding-top: 50px;
     padding-bottom: 137px;
     box-sizing: border-box;
     p {
-        padding-top: 24px;
+        padding: 24px;
         box-sizing: border-box;
     }
 }
@@ -19,7 +19,7 @@
         box-sizing: border-box;
     }
     p {
-        padding-top: 25px;
+        padding: 25px;
         margin: 0 auto;
         max-width: 800px;
     }

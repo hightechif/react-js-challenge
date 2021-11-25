@@ -14,7 +14,11 @@ const StyledInput = styled.div`
         margin-left: 10px;
     }
     input[type=text] {
+        border: 2px solid;
+        border-color: darkgray;
+        border-radius: 15px;
         margin-right: 10px;
+        padding-left: 10px;
     }
     input[type=text]:focus {
         outline: 0;
@@ -41,14 +45,16 @@ const Challenge05 = () => {
     }
 
     const handleSubmit = (event) => {
-        setId(id+1);
-        setTodos([...todos, {
-                id: id,
-                text: text,
-                completed: false
-            }]);
-        setText("");
         event.preventDefault(); // Khusus untuk onSubmit agar tidak dianggap dilempar ke url
+        if (text.length > 0) {
+            setId(id+1);
+            setTodos([...todos, {
+                    id: id,
+                    text: text,
+                    completed: false
+                }]);
+            setText("");
+        }
     }
 
     const deleteHandler = () => {
@@ -60,14 +66,14 @@ const Challenge05 = () => {
     return (
         <div className="challenge05">
             <div className="todo-list">
-                {todos.map(item => <TodoItem key={item.id} item={item} onChange={() => onCheckHandler(item.id)}/>)}
                 <StyledInput>
                     <form onSubmit={(event) => handleSubmit(event)}>
                         <input id="text-input" type="text" value={text} onChange={(event) => onChangeHandler(event)} placeholder="write todos"/>
-                        <input id="submit" type="submit" value="Submit"/>
+                        <button id="submit" type="submit">Submit</button>
                     </form>
                     <button onClick={deleteHandler}>Clear</button>
                 </StyledInput>
+                {todos.map(item => <TodoItem key={item.id} item={item} onChange={() => onCheckHandler(item.id)}/>)}
             </div>
         </div>
     )

@@ -1,6 +1,6 @@
 {
   "name": "react-js-challenge",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@elevenia/master-ui": "^2.6.5",
@@ -22,10 +22,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "npm run build:tailwind && react-scripts build",
     "test": "react-scripts test",
-    "sass": "sass --watch src/styles/sass/Main.scss:src/styles/css/Main.css",
-    "build:tailwind": "tailwind build -i src/styles/css/Tailwind.css -o public/style.css",
+    "sass": "sass --watch src/assets/sass/Main.scss:src/assets/css/Main.css",
+    "build:tailwind": "tailwind build -i src/assets/css/Tailwind.css -o public/style.css",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

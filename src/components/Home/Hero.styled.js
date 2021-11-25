@@ -29,7 +29,7 @@ export const StyledHero = styled.div`
     & > h1 {
         color: #FFFFFF;
         font-size: 60px;
-        margin-top: -30px;
+        margin: 30px;
     }
 
     & > p {

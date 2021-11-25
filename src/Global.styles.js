@@ -1,10 +1,6 @@
 import styled from "styled-components";
 
-const GlobalStyled = styled.div`
-    * {
-        margin: 0;
-        padding: 0;
-    }
+const GlobalStyles = styled.div`
     *:hover {
         text-decoration: none;
     }
@@ -16,4 +12,4 @@ const GlobalStyled = styled.div`
     }
 `
 
-export default GlobalStyled;
+export default GlobalStyles;

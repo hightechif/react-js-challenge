@@ -1,3 +1,81 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
 .challenge-2 {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -273,6 +351,8 @@
 }
 
 .btn-primary {
+  padding-left: 10px;
+  padding-right: 10px;
   border: none;
   background: #0084F8;
   font-family: "Open Sans";
@@ -285,6 +365,8 @@
 }
 
 .btn-secondary {
+  padding-left: 10px;
+  padding-right: 10px;
   background-color: #FFFFFF;
   border: 1px solid #0084F8;
   box-sizing: border-box;
@@ -298,6 +380,8 @@
 }
 
 .btn-disabled {
+  padding-left: 10px;
+  padding-right: 10px;
   border: none;
   background: #C9D6DF;
   font-family: "Open Sans";
@@ -310,6 +394,8 @@
 }
 
 .btn-success {
+  padding-left: 10px;
+  padding-right: 10px;
   border: none;
   background: #47C2B1;
   font-family: "Open Sans";
@@ -322,6 +408,8 @@
 }
 
 .btn-delete {
+  padding-left: 10px;
+  padding-right: 10px;
   border: none;
   background: #FF8576;
   font-family: "Open Sans";
@@ -334,59 +422,59 @@
 }
 
 :root {
-  --primary: #fff;
+  --primary: #FFFFFF;
 }
 
-.btn {
+.home-btn {
   padding: 8px 30px;
-  border-radius: 2px;
+  border-radius: 5px;
   outline: none;
   border: none;
   cursor: pointer;
 }
 
-.btn:hover {
+.home-btn:hover {
   text-decoration: none;
 }
 
-.btn--primary {
+.home-btn--primary {
   background-color: var(--primary);
   color: #242424;
   border: 1px solid var(--primary);
 }
 
-.btn--outline {
+.home-btn--outline {
   background-color: transparent;
-  color: #fff;
+  color: #FFFFFF;
   padding: 8px 20px;
   border: 1px solid var(--primary);
   transition: all 0.3s ease-out;
   text-decoration: none;
 }
 
-.btn--medium {
+.home-btn--medium {
   padding: 8px 20px;
   font-size: 18px;
   text-decoration: none;
 }
 
-.btn--large {
+.home-btn--large {
   padding: 12px 26px;
   font-size: 20px;
 }
 
-.btn--medium:hover,
-.btn--large:hover {
+.home-btn--medium:hover,
+.home-btn--large:hover {
   background: #fff;
   color: #242424;
   transition: all 0.3s ease-out;
   text-decoration: none;
 }
 
-.btn-mobile {
+.home-btn-mobile {
   text-decoration: none;
 }
-.btn-mobile:hover {
+.home-btn-mobile:hover {
   text-decoration: none;
 }
 
@@ -1044,12 +1132,12 @@
 
 .section-1 {
   background: #F2F2F2;
-  padding-top: 96px;
+  padding-top: 50px;
   padding-bottom: 137px;
   box-sizing: border-box;
 }
 .section-1 p {
-  padding-top: 24px;
+  padding: 24px;
   box-sizing: border-box;
 }
 
@@ -1063,7 +1151,7 @@
   box-sizing: border-box;
 }
 .section-2 p {
-  padding-top: 25px;
+  padding: 25px;
   margin: 0 auto;
   max-width: 800px;
 }

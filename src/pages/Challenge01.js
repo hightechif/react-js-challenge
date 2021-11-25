@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import Button from '../components/Button/Button';
 import ButtonNotif from '../components/Button/ButtonNotif';
 import RatingRound from '../components/Rating/RatingRound';
