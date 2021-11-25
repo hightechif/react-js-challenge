@@ -1,4 +1,10 @@
+@mixin btn-padding {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .btn-primary {
+    @include btn-padding();
     border: none;
     background: #0084F8;
     font-family: "Open Sans";
@@ -10,6 +16,7 @@
     color: #FFFFFF;
 }
 .btn-secondary {
+    @include btn-padding();
     background-color: #FFFFFF;
     border: 1px solid #0084F8;
     box-sizing: border-box;
@@ -22,6 +29,7 @@
     color: #0084F8;
 }
 .btn-disabled {
+    @include btn-padding();
     border: none;
     background: #C9D6DF;
     font-family: "Open Sans";
@@ -33,6 +41,7 @@
     color: #FFFFFF;
 }
 .btn-success {
+    @include btn-padding();
     border: none;
     background: #47C2B1;
     font-family: "Open Sans";
@@ -45,6 +54,7 @@
 }
 
 .btn-delete {
+    @include btn-padding();
     border: none;
     background: #FF8576;
     font-family: "Open Sans";

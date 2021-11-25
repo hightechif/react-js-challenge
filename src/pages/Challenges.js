@@ -37,7 +37,7 @@ const Challenges = () => {
                     target=''
                     className='nav-links'
                 >
-                    Challenge04 - Elevenia Master-UI (Private Component Library)
+                    Challenge04 - Elevenia Master-UI (Private Design System)
                 </Link>
             </li>
             <li className='nav-item'>

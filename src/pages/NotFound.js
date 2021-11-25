@@ -1,7 +1,4 @@
-import React from "react";
-import "../App.css";
-
-function Notfound(props) {
+function NotFound(props) {
   return (
     <div className="App">
       <header className="App-header">
@@ -11,4 +8,4 @@ function Notfound(props) {
   );
 }
 
-export default Notfound;
+export default NotFound;

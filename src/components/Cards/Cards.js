@@ -6,22 +6,22 @@ function Card() {
 		<div className='cards__container'>
 			<ul className='cards__items'>
 				<CardItem
-					src='img/media.png'
+					src='images/media.png'
 					text='Special Feature'
 					path='#'
 				/>
 				<CardItem
-					src='img/media.png'
+					src='images/media.png'
 					text='Special Feature'
 					path='#'
 				/>
 				<CardItem
-					src='img/media.png'
+					src='images/media.png'
 					text='Special Feature'
 					path='#'
 				/>
 				<CardItem
-					src='img/media.png'
+					src='images/media.png'
 					text='Special Feature'
 					path='#'
 				/>
