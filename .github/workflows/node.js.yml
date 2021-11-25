@@ -26,7 +26,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm config set '//registry.npmjs.org/:_authToken=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"
+    - run: npm config set '//registry.npmjs.org/:_authToken=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'
     - run: npm publish
     - run: npm install
     - run: npm ci
