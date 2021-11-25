@@ -10,10 +10,11 @@ const StyledCounterInput = styled.div`
 function CounterInput(props) {
     return (
         <StyledCounterInput>
+            <label htmlFor="">Atur nilai count: </label>
             <input 
                 type="number"
                 onChange={props.changed}
-                placeholder="Masukkan angka"
+                placeholder="masukkan angka"
             />
         </StyledCounterInput>
     )

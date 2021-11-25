@@ -9,7 +9,7 @@ const Section4 = (props) => {
                     <figure className='box__item__pic-wrap'>
                         <img 
                             className='box__item__img'
-                            src="img/Media3.png" 
+                            src="images/Media3.png" 
                             alt="Media" 
                         />
                     </figure>

@@ -6,10 +6,10 @@ package-lock.json
 yarn.lock
 /.pnp
 .pnp.js
-.npmrc
+# .npmrc
 
 # variables
-.env
+# .env
 
 # testing
 /coverage

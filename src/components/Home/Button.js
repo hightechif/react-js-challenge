@@ -1,5 +1,5 @@
-const STYLES = ['btn--primary', 'btn--outline'];
-const SIZES = ['btn--medium', 'btn--large'];
+const STYLES = ['home-btn--primary', 'home-btn--outline'];
+const SIZES = ['home-btn--medium', 'home-btn--large'];
 
 export const Button = ({
   children, 
@@ -19,7 +19,7 @@ export const Button = ({
 
     return (
         <button
-          className={`btn ${className} ${checkButtonStyle} ${checkButtonSize}`}
+          className={`home-btn ${className} ${checkButtonStyle} ${checkButtonSize}`}
           onClick={onClick}
           type={type}
         >

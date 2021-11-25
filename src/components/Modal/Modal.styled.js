@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const StyledModal = styled.div`
     position: relative;
-    width: 395px;
+    width: 390px;
     height: 255px;
     margin: 5px;
     .modal-rectangle {

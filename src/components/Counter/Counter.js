@@ -9,10 +9,16 @@ const StyledCounter = styled.div`
     justify-content: center;
     align-items: center;
     text-align: center;
+    button {
+        color: darkblue;
+        border: 2px solid lightblue;
+        padding: 5px;
+        border-radius: 15px;
+        margin: 10px;
+    }
 `
 
 const Counter = () => {
-    // State
     const [ count, setCount ] = useState(0);
     const [ quota, setQuota ] = useState(5);
     const [ results, setResults ] = useState([]);
@@ -78,6 +84,7 @@ const Counter = () => {
             />
             <CounterInput changed={(event) => onQuotaChangeHandler(event)}/>
             <button onClick={storeHandler}>Simpan Data</button>
+            <p>Klik angka untuk menghapus data</p>
             <ul>
                 {results.map((result) => {
                     return (

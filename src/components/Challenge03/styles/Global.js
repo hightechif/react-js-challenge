@@ -18,6 +18,8 @@ const GlobalStyles = createGlobalStyle`
     p {
         opacity: 0.6;
         line-height: 1.5;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 
     img {

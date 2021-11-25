@@ -8,7 +8,7 @@ const Header = () => {
         <StyledHeader>
             <Container>
                 <Nav>
-                    <Logo src='./img/logo.svg' alt=''/>
+                    <Logo src='./images/logo.svg' alt=''/>
                     <Button>Try It Free</Button>
                 </Nav>
                 <Flex>
@@ -24,7 +24,7 @@ const Header = () => {
                         </Button>
                     </div>
                     
-                    <Image src='./img/illustration-mockups.svg' alt='' />    
+                    <Image src='./images/illustration-mockups.svg' alt='' />    
                 </Flex>
             </Container>
         </StyledHeader>

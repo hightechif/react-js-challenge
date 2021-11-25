@@ -1,54 +1,54 @@
 :root {
-    --primary: #fff;
+    --primary: #FFFFFF;
 }
 
-.btn {
+.home-btn {
     padding: 8px 30px;
-    border-radius: 2px;
+    border-radius: 5px;
     outline: none;
     border: none;
     cursor: pointer;
 }
 
-.btn:hover {
+.home-btn:hover {
     text-decoration: none;
 }
 
-.btn--primary {
+.home-btn--primary {
     background-color: var(--primary);
     color: #242424;
     border: 1px solid var(--primary);
 }
 
-.btn--outline {
+.home-btn--outline {
     background-color: transparent;
-    color: #fff;
+    color: #FFFFFF;
     padding: 8px 20px;
     border: 1px solid var(--primary);
     transition: all 0.3s ease-out;
     text-decoration: none;
 }
 
-.btn--medium {
+.home-btn--medium {
     padding: 8px 20px;
     font-size: 18px;
     text-decoration: none;
 }
 
-.btn--large {
+.home-btn--large {
     padding: 12px 26px;
     font-size: 20px;
 }
 
-.btn--medium:hover,
-.btn--large:hover {
+.home-btn--medium:hover,
+.home-btn--large:hover {
     background: #fff;
     color: #242424;
     transition: all 0.3s ease-out;
     text-decoration: none;
 }
 
-.btn-mobile {
+.home-btn-mobile {
     text-decoration: none;
     &:hover {
         text-decoration: none;
