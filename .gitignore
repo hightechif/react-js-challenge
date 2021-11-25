@@ -7,10 +7,10 @@ yarn.lock
 /.pnp
 .pnp.js
 /public/style.css
-# .npmrc
+.npmrc
 
 # variables
-# .env
+.env
 
 # testing
 /coverage
