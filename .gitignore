@@ -7,7 +7,7 @@
 package-lock.json
 yarn.lock
 /public/style.css
-.npmrc
+# .npmrc
 
 # variables
 .env
