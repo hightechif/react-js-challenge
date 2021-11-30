@@ -6,7 +6,7 @@
 .pnp.js
 package-lock.json
 yarn.lock
-/public/style.css
+# /public/style.css
 # .npmrc
 
 # variables
@@ -17,6 +17,8 @@ yarn.lock
 
 # production
 /build
+Procfile
+server.js
 
 # misc
 .DS_Store
