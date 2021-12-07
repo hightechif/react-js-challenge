@@ -17,10 +17,8 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
-    "autoprefixer": "^10.4.0",
     "env-cmd": "^10.1.0",
     "install": "^0.13.0",
-    "postcss": "^8.4.4",
     "randomcolor": "^0.6.2",
     "react": "^17.0.2",
     "react-bootstrap": "^2.0.1",
@@ -29,15 +27,14 @@
     "react-router-dom": "^6.0.2",
     "react-scripts": "4.0.3",
     "styled-components": "^5.3.3",
-    "tailwindcss": "^2.2.19",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
     "start": "craco start",
-    "build": "npm run build:tailwind && craco build",
+    "build": "craco build",
     "test": "craco test",
     "sass": "sass --watch src/assets/sass/Main.scss:src/assets/css/Main.css",
-    "build:tailwind": "tailwind build -i ./src/assets/css/Tailwind.css -o ./dist/tailwind.css",
+    "build:tailwind": "npx tailwindcss -i ./src/assets/css/Tailwind.css -o ./dist/tailwind.css",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -57,5 +54,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss7-compat": "^2.2.17",
+    "autoprefixer": "^9.8.8",
+    "postcss": "^7.0.39"
   }
 }
