@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styled from 'styled-components';
-import Form from '../components/Form/Form';
-import TableDisplay from '../components/Table/TableDisplay';
+import Form from '../../components/Form/Form';
+import TableDisplay from '../../components/Table/TableDisplay';
 
 const StyledDiv = styled.div`
     margin-bottom: 50px;

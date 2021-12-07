@@ -61,6 +61,7 @@ export const StyledHero = styled.div`
     @media screen and (max-width: 768px) {
         & > h1 {
             font-size: 30px;
+            line-height: 30px;
         }
 
         & > p {

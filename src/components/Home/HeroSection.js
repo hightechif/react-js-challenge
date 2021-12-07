@@ -5,7 +5,7 @@ import { StyledHero } from './Hero.styled';
 const HeroSection = () => {
 	return (
 		<StyledHero>
-			<img className="heroImg" src="/images/img-home.jpg" alt="" />
+			<img className="heroImg" src="/images/img-home.webp" alt="" />
 			<h1>TMT Frontend Challenges</h1>
 			<p>by Ridhan Fadhilah</p>
 			<div className="hero-btns">

@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './App';
 import { ThemeProvider } from 'styled-components';
 import IndomaretTheme from './assets/Theme';
-import App from './App';
+import GlobalStyles from './assets/css/Global.styles';
 import './assets/css/Main.css';
-import GlobalStyles from './Global.styles';
+import './assets/css/Tailwind.css';
 
 ReactDOM.render(
   <React.StrictMode>

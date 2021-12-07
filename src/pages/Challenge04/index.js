@@ -1,5 +1,5 @@
 import { ThemeProvider } from 'styled-components'
-import IndomaretTheme from '../assets/Theme';
+import IndomaretTheme from '../../assets/Theme';
 import { Button, Table } from "@elevenia/master-ui/components/Atom";
 import '@elevenia/master-ui/assets/index.css';
 import '@elevenia/master-ui/Theme/index.css';

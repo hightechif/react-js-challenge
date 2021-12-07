@@ -1,5 +1,5 @@
 import { useState } from "react";
-import TodoItem from "../components/TodoItem"
+import TodoItem from "../../components/TodoItem"
 import styled from "styled-components";
 
 const StyledInput = styled.div`

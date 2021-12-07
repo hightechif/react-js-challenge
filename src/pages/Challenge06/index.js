@@ -1,4 +1,4 @@
-import Counter from "../components/Counter/Counter";
+import Counter from "../../components/Counter/Counter";
 
 const Challenge06 = () => {
     // How to change array into object

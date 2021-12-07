@@ -1,14 +1,14 @@
 import React from "react";
 import Home from "../pages/Home";
 import Challenges from "../pages/Challenges";
-import Challenge01 from "../pages/Challenge01";
-import Challenge02 from "../pages/Challenge02";
-import Challenge03 from "../pages/Challenge03";
-import Challenge04 from "../pages/Challenge04";
-import Challenge05 from "../pages/Challenge05";
-import Challenge06 from "../pages/Challenge06";
-import Challenge07 from "../pages/Challenge07";
 import NotFound from "../pages/NotFound";
+const Challenge01 = React.lazy(() => import("../pages/Challenge01"));
+const Challenge02 = React.lazy(() => import("../pages/Challenge02"));
+const Challenge03 = React.lazy(() => import("../pages/Challenge03"));
+const Challenge04 = React.lazy(() => import("../pages/Challenge04"));
+const Challenge05 = React.lazy(() => import("../pages/Challenge05"));
+const Challenge06 = React.lazy(() => import("../pages/Challenge06"));
+const Challenge07 = React.lazy(() => import("../pages/Challenge07"));
 // Slider
 // Profile Page
 

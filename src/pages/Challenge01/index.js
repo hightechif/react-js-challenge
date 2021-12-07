@@ -1,12 +1,12 @@
 import { useState } from 'react'
-import Button from '../components/Button/Button';
-import ButtonNotif from '../components/Button/ButtonNotif';
-import RatingRound from '../components/Rating/RatingRound';
-import RatingStar from '../components/Rating/RatingStar';
-import Badge from '../components/Badge/Badge';
-import Modal from '../components/Modal/Modal';
-import BadgeColor from '../components/Badge/BadgeColor';
-import BadgeCloud from '../components/Badge/BadgeCloud';
+import Button from '../../components/Button/Button';
+import ButtonNotif from '../../components/Button/ButtonNotif';
+import RatingRound from '../../components/Rating/RatingRound';
+import RatingStar from '../../components/Rating/RatingStar';
+import Badge from '../../components/Badge/Badge';
+import Modal from '../../components/Modal/Modal';
+import BadgeColor from '../../components/Badge/BadgeColor';
+import BadgeCloud from '../../components/Badge/BadgeCloud';
 
 const Challenge01 = ({text, className, decorator}) => {
     const [open,setopen] = useState(false);
