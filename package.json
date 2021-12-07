@@ -34,10 +34,10 @@
   },
   "scripts": {
     "start": "craco start",
-    "build": "env-cmd -f NODE_ENV=production npx tailwindcss -i src/assets/css/Tailwind.css -o ./dist/tailwind.css --minify && craco build",
+    "build": "npm run build:tailwind && craco build",
     "test": "craco test",
     "sass": "sass --watch src/assets/sass/Main.scss:src/assets/css/Main.css",
-    "build:tailwind": "tailwind build -i src/assets/css/Tailwind.css -o src/assets/css/TailwindBuild.css",
+    "build:tailwind": "tailwind build -i ./src/assets/css/Tailwind.css -o ./dist/tailwind.css",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
