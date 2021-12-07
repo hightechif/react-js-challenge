@@ -8,7 +8,7 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    require('tailwindcss'),
+    require('tailwindcss@npm:@tailwindcss/postcss7-compat'),
     require('autoprefixer')
   ],
 }
