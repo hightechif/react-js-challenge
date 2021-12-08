@@ -4,24 +4,26 @@ import Navbar from './components/Navbar';
 import RouteConfig from './config/RouteConfig';
 
 function App() {
-	const loading = () => <></>
+	const loading = <span>Loading...</span>
 	return (
 		<BrowserRouter>
 			<Navbar />
-			<Suspense fallback={loading}>
-				<Routes>
-					{RouteConfig.public.map((route, idx) => {
-						return route.element ? (
-							<Route
-								key={idx}
-								path={route.path}
-								name={route.name}
-								element={route.element}
-							/>
-						) : null
-					})}
-				</Routes>
-			</Suspense>
+			<Routes>
+				{RouteConfig.public.map((route, idx) => {
+					return route.element ? (
+						<Route
+							key={idx}
+							path={route.path}
+							name={route.name}
+							element={
+								<Suspense fallback={loading} >
+									<route.element />
+								</Suspense>
+							}
+						/>
+					) : null
+				})}
+			</Routes>
 		</BrowserRouter>
 	);
 }

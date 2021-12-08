@@ -31,7 +31,7 @@ const Challenges = () => {
                     Challenge03 - Styled Components
                 </Link>
             </li>
-            <li className='nav-item'>
+            {/* <li className='nav-item'>
                 <Link
                     to='/challenge04'
                     target=''
@@ -39,7 +39,7 @@ const Challenges = () => {
                 >
                     Challenge04 - Elevenia Master-UI (Private Design System)
                 </Link>
-            </li>
+            </li> */}
             <li className='nav-item'>
                 <Link
                     to='/challenge05'
@@ -58,7 +58,7 @@ const Challenges = () => {
                     Challenge06 - Counter App (React CRUD)
                 </Link>
             </li>
-            <li className='nav-item'>
+            {/* <li className='nav-item'>
                 <Link
                     to='/challenge07'
                     target=''
@@ -66,7 +66,7 @@ const Challenges = () => {
                 >
                     Challenge07 - Form & Table (React Form CRUD, Tailwind)
                 </Link>
-            </li>
+            </li> */}
         </div>
     )
 }

@@ -106,8 +106,8 @@
         display: flex;
         flex-wrap: wrap;
         gap: 40px;
+        justify-content: center;
         div {
-            margin: 0 auto;
             &:nth-child(1) {
                 box-sizing: border-box;
                 background: #000000;
@@ -128,19 +128,11 @@
     }
 }
 .description {
-    padding-top: 54px;
-    padding-left: 78px;
-    padding-right: 40px;
-    padding-bottom: 0;
+    padding: 10px 78px 10px 40px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    p {
-        padding-bottom: 16px;
-    }
-    h1 {
-        margin: 0 0;
-    }
+    justify-content: space-around;
 }
 .article {
     background: #FFFFFF;
@@ -173,13 +165,14 @@
     }
     .section-4 {
         .description {
-            padding-top: 25px; 
-            padding-left: 50px;
+            h1 {
+                font-size: 32px;
+            }
         }
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
     .section-1 {
         padding-top: 25px;
         padding-bottom: 25px;
@@ -198,12 +191,6 @@
         }
         .box__item__img {
             width: inherit;
-        }
-        .description {
-            padding: 25px 50px;
-            h1 {
-                padding-bottom: 50px;
-            }
         }
         .article {
             width: 370px;

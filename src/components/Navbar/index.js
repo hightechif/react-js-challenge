@@ -2,7 +2,7 @@ import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Button } from './Home/Button';
+import { Button } from '../Home/Button';
 
 const Navbar = () => {
     const [click, setClick] = useState(false);
@@ -38,13 +38,12 @@ const Navbar = () => {
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
                             <Link 
-                                to='/challenges'
+                                to='/menu'
                                 target=''
                                 className='nav-links'
-                                href='/challenges'
                                 onClick={closeMobileMenu}
                             >
-                                Challenges
+                                Menu
                             </Link>
                         </li>
                         <li>

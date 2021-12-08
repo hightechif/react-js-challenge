@@ -5,7 +5,7 @@ const Section4 = (props) => {
     return (
         <section className="section-4">
             <div className="section-4__wrapper">
-                <div>
+                <div className="section-4__container">
                     <figure className='box__item__pic-wrap'>
                         <img 
                             className='box__item__img'

@@ -16,6 +16,9 @@ const StyledCounter = styled.div`
         border-radius: 15px;
         margin: 10px;
     }
+    li {
+        list-style: none;
+    }
 `
 
 const Counter = () => {

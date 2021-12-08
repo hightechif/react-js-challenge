@@ -1239,9 +1239,7 @@ select {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-}
-.section-4__wrapper div {
-  margin: 0 auto;
+  justify-content: center;
 }
 .section-4__wrapper div:nth-child(1) {
   box-sizing: border-box;
@@ -1261,19 +1259,11 @@ select {
 }
 
 .description {
-  padding-top: 54px;
-  padding-left: 78px;
-  padding-right: 40px;
-  padding-bottom: 0;
+  padding: 10px 78px 10px 40px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-}
-.description p {
-  padding-bottom: 16px;
-}
-.description h1 {
-  margin: 0 0;
+  justify-content: space-around;
 }
 
 .article {
@@ -1305,12 +1295,11 @@ select {
     display: flex;
   }
 
-  .section-4 .description {
-    padding-top: 25px;
-    padding-left: 50px;
+  .section-4 .description h1 {
+    font-size: 32px;
   }
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
   .section-1 {
     padding-top: 25px;
     padding-bottom: 25px;
@@ -1328,15 +1317,12 @@ select {
   .section-4 .box__item__img {
     width: inherit;
   }
-  .section-4 .description {
-    padding: 25px 50px;
-  }
-  .section-4 .description h1 {
-    padding-bottom: 50px;
-  }
   .section-4 .article {
     width: 370px;
   }
+}
+.challenges li {
+  list-style: none;
 }
 .challenges .nav-item {
   height: 80px;

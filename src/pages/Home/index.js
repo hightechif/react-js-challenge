@@ -1,9 +1,7 @@
 import styled from 'styled-components';
-import HeroSection from '../components/Home/HeroSection';
+import HeroSection from '../../components/Home/HeroSection';
 // import Cards from '../components/Home/Cards';
-// import Footer from '../components/Home/Footer';
-import '@elevenia/master-ui/Theme/index.css';
-import '@elevenia/master-ui/assets/index.css';
+// import Footer from '../components/Home/Footer';\
 
 const StyledHome = styled.div`
      box-sizing: border-box;
