@@ -2,6 +2,19 @@ import { useState } from "react";
 import TodoItem from "../../components/TodoItem"
 import styled from "styled-components";
 
+const StyledTodo = styled.div`
+    margin: 0 0;
+    padding: 0 0;
+    .todo-list {
+        margin: 10px auto;
+        padding: 10px 10px;
+        width: 90%;
+        form {
+            margin: 0 auto;
+        }
+    }
+`
+
 const StyledInput = styled.div`
     display: flex;
     flex-direction: row;
@@ -22,6 +35,16 @@ const StyledInput = styled.div`
     }
     input[type=text]:focus {
         outline: 0;
+    }
+    @media screen and (max-width: 768) {
+        input, button {
+            margin-top: 2px;
+            font-size: 2px;
+        }
+        input[type=text] {
+            margin: 0 0;
+            padding: 0 0;
+        }
     }
 `
 
@@ -64,18 +87,18 @@ const Challenge05 = () => {
     }
     
     return (
-        <div className="challenge05">
+        <StyledTodo className="challenge05">
             <div className="todo-list">
                 <StyledInput>
                     <form onSubmit={(event) => handleSubmit(event)}>
                         <input id="text-input" type="text" value={text} onChange={(event) => onChangeHandler(event)} placeholder="write todos"/>
                         <button id="submit" type="submit">Submit</button>
+                        <button onClick={deleteHandler}>Clear</button>
                     </form>
-                    <button onClick={deleteHandler}>Clear</button>
                 </StyledInput>
                 {todos.map(item => <TodoItem key={item.id} item={item} onChange={() => onCheckHandler(item.id)}/>)}
             </div>
-        </div>
+        </StyledTodo>
     )
 }
 

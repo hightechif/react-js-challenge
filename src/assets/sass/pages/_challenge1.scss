@@ -1,4 +1,4 @@
-$marginSize: 5px;
+$marginSize: 20px;
 
 .challenge01 {
     display: grid;
@@ -17,4 +17,16 @@ $marginSize: 5px;
 .badge-container {
     display: flex;
     margin: $marginSize;
+}
+
+@media screen and (max-width: 768px) {
+    .button-container {
+        flex-wrap: wrap;
+    }
+    .rating-container, .badge-container {
+        flex-direction: column;
+    }
+    .badge-container {
+        gap: 25px;
+    }
 }

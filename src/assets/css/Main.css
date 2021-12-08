@@ -1115,20 +1115,33 @@ select {
 
 .button-container {
   display: flex;
-  margin: 5px;
+  margin: 20px;
 }
 
 .rating-container {
   display: flex;
   justify-content: flex-start;
-  margin: 5px;
+  margin: 20px;
 }
 
 .badge-container {
   display: flex;
-  margin: 5px;
+  margin: 20px;
 }
 
+@media screen and (max-width: 768px) {
+  .button-container {
+    flex-wrap: wrap;
+  }
+
+  .rating-container, .badge-container {
+    flex-direction: column;
+  }
+
+  .badge-container {
+    gap: 25px;
+  }
+}
 .section-1 {
   background: #F2F2F2;
   padding-top: 50px;
