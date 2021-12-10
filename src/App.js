@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import RouteConfig from './config/RouteConfig';
 
 function App() {
-	const loading = <span>Loading...</span>
+	const loading = () => <span>Loading...</span>
 	return (
 		<BrowserRouter>
 			<Navbar />
@@ -16,7 +16,7 @@ function App() {
 							path={route.path}
 							name={route.name}
 							element={
-								<Suspense fallback={loading} >
+								<Suspense fallback={loading()} >
 									<route.element />
 								</Suspense>
 							}

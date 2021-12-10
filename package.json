@@ -7,6 +7,7 @@
     "npm": "8.1.4"
   },
   "dependencies": {
+    "@craco/craco": "^6.4.3",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.16",
@@ -28,9 +29,9 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
     "sass": "sass --watch src/assets/sass/Main.scss:src/assets/css/Main.css",
     "build:tailwind": "npx tailwindcss -i ./src/assets/css/Tailwind.css -o ./dist/tailwind.css",
     "eject": "react-scripts eject"
