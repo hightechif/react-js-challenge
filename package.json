@@ -34,7 +34,6 @@
     "build": "craco build",
     "test": "craco test",
     "sass": "sass --watch src/assets/sass/Main.scss:src/assets/css/Main.css",
-    "build:tailwind": "npx tailwindcss -i ./src/assets/css/Tailwind.css -o ./dist/tailwind.css",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
