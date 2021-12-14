@@ -2,6 +2,7 @@ import { useState } from 'react';
 import styled from 'styled-components';
 import Form from '../../components/Form/Form';
 import TableDisplay from '../../components/Table/TableDisplay';
+import formContent from '../../assets/formContent';
 
 const StyledDiv = styled.div`
     margin-bottom: 50px;
@@ -15,38 +16,7 @@ const StyledDiv = styled.div`
 
 const Challenge07 = () => {
     // const [data, setData] = useState([])
-    const [data, setData] = useState([
-        {
-            "NIK": "3273051201970001",
-            "username": "mnfathur",
-            "password": "12345678",
-            "firstname": "Nur",
-            "lastname": "Fathur",
-            "gender": "Male",
-            "email": "mnfathur@gmail.com",
-            "birthday": "1998-04-28",
-            "phone": "081220071998",
-            "website": "mnfathur.com",
-            "hobby": ["Karate"],
-            "favColor": "#FF00FF",
-            "happiness": 47
-        },
-        {
-            "NIK": "3273051201970002",
-            "username": "fadhil",
-            "password": "langsung",
-            "firstname": "Ridhan",
-            "lastname": "Fadhilah",
-            "gender": "Male",
-            "email": "ridhanfadhilah@gmail.com",
-            "birthday": "1997-01-12",
-            "phone": "081220220697",
-            "website": "rfadhil.com",
-            "hobby": ["Basketball", "Music"],
-            "favColor": "#005588",
-            "happiness": 97
-        }
-    ]);
+    const [data, setData] = useState(formContent);
     const bioTemplate = {
         "NIK": "",
         "username": "",

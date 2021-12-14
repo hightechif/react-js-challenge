@@ -27,10 +27,14 @@ const Form = (props) => {
                         Gender
                     </span>
                     <div className="w-full flex gap-1">
-                        <input name="gender" type="radio" value="Male" id="gender1" checked={biodata.gender === "Male"} onChange={(event) => handleChange(event)} placeholder="gender" className="bg-gray-200 text-gray-700" />
-                        <label htmlFor="gender">Male</label>
-                        <input name="gender" type="radio" value="Female" id="gender2" checked={biodata.gender === "Female"} onChange={(event) => handleChange(event)} placeholder="gender" className="bg-gray-200 text-gray-700" />
-                        <label htmlFor="gender">Female</label>
+                        <label htmlFor="gender">
+                            <input name="gender" type="radio" value="Male" id="gender1" checked={biodata.gender === "Male"} onChange={(event) => handleChange(event)} placeholder="gender" className="bg-gray-200 text-gray-700 mr-2" />
+                            Male
+                        </label>
+                        <label htmlFor="gender">
+                            <input name="gender" type="radio" value="Female" id="gender2" checked={biodata.gender === "Female"} onChange={(event) => handleChange(event)} placeholder="gender" className="bg-gray-200 text-gray-700 mr-2" />
+                            Female
+                        </label>
                     </div>
                     {!(isFormFilled || biodata.gender !== "") && <p className="text-red-500 text-xs italic">Please fill out this field.</p>}
                 </div>
@@ -57,15 +61,23 @@ const Form = (props) => {
                     <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="X">
                         Hobby
                     </label>
-                    <div className="w-full flex gap-1">
-                        <input name="hobby" type="checkbox" value="Football" id="hobby1" checked={biodata.hobby.includes("Football")} onChange={(event) => handleChange(event)} placeholder="hobby" />
-                        <label htmlFor="hobby">Football</label>
-                        <input name="hobby" type="checkbox" value="Basketball" id="hobby2" checked={biodata.hobby.includes("Basketball")} onChange={(event) => handleChange(event)} placeholder="hobby" />
-                        <label htmlFor="hobby">Basketball</label>
-                        <input name="hobby" type="checkbox" value="Music" id="hobby3" checked={biodata.hobby.includes("Music")} onChange={(event) => handleChange(event)} placeholder="hobby" />
-                        <label htmlFor="hobby">Music</label>
-                        <input name="hobby" type="checkbox" value="Karate" id="hobby4" checked={biodata.hobby.includes("Karate")} onChange={(event) => handleChange(event)} placeholder="hobby" />
-                        <label htmlFor="hobby">Karate</label>
+                    <div className="w-full flex flex-wrap gap-1 mb-6">
+                        <label htmlFor="hobby">
+                            <input name="hobby" type="checkbox" value="Football" id="hobby1" checked={biodata.hobby.includes("Football")} onChange={(event) => handleChange(event)} placeholder="hobby" className="mr-2" />
+                            Football
+                        </label>
+                        <label htmlFor="hobby">
+                            <input name="hobby" type="checkbox" value="Basketball" id="hobby2" checked={biodata.hobby.includes("Basketball")} onChange={(event) => handleChange(event)} placeholder="hobby" className="mr-2" />
+                            Basketball
+                        </label>
+                        <label htmlFor="hobby">
+                            <input name="hobby" type="checkbox" value="Music" id="hobby3" checked={biodata.hobby.includes("Music")} onChange={(event) => handleChange(event)} placeholder="hobby" className="mr-2" />
+                            Music
+                        </label>
+                        <label htmlFor="hobby">
+                            <input name="hobby" type="checkbox" value="Karate" id="hobby4" checked={biodata.hobby.includes("Karate")} onChange={(event) => handleChange(event)} placeholder="hobby" className="mr-2" />
+                            Karate
+                        </label>
                     </div>
                 </div>
                 <div className="w-full md:w-1/3 px-3">

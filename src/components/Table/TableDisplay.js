@@ -18,7 +18,9 @@ const TableDisplay = (props) => {
 			let biodata = data[i]
 			for (let j = 0; j < columns.length; j++) {
 				if (columns[j] !== "password") {
-					children.push(<td key={`${biodata["NIK"]} ${columns[j]}`}>{biodata[columns[j]].toString()}</td>);
+					const favColor = columns[j] === "favColor" ? biodata[columns[j]].toString() : "#FFFFFF";
+					const textColor = columns[j] === "favColor" ? "#DDDDDD" : "#000000";
+					children.push(<td key={`${biodata["NIK"]} ${columns[j]}`}><span style={{backgroundColor: favColor, color: textColor}}>{biodata[columns[j]].toString()}</span></td>);
 				}
 			}
 			let NIK = biodata["NIK"]
